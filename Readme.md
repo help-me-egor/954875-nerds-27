@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Егор Сантовский](https://up.htmlacademy.ru/htmlcss/27/user/954875).
-* Наставник: Никита Победоносцев.
+* Наставник: [Никита Победоносцев] (https://htmlacademy.ru/profile/nikkypizza)
 
 ---
 
