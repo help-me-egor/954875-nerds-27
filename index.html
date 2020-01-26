@@ -14,43 +14,107 @@
     <li><a href="catalog.html">Магазин</a></li>
     <li><a href="#">Контакты</a></li>
   </ul>
-  <ul>
-    <li><button type="button">Корзина</button></li>
-  </ul>
-</nav>
+</nav>  
+<button type="button"> <img src="shoppingbasket.png" alt="Корзина"> Корзина</button>
 </header>
     <main>
       <h1>NЁRDS DESIGN STUDIO</h1>
+      <!-- Здесь будет карусель под основной навигацией-->
       <section>
-        <a href="websites.html"><img src="illustration-1.png" alt="картинка вебсейты" width="300px" height="146px"></a>
-        <h2>Веб-сайты</h2>
-        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        <button type="button" name="websites_order">Заказать</button>
-      </section>
-      <section>
-        <a href="applications.html"><img src="illustration-2.png" alt="картинка приложения" width="300px" height="146px"></a>
-        <h2>Приложения</h2>
-        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-        <button type="button" name="applications_order">Заказать</button>
-      </section>
-      <section>
-        <a href="presentations.html"><img src="illustration-3.png" alt="картинка презентации" width="300px" height="146px"></a>
+      <ul>
+        <li>
+          <img src="illustration-1.png" alt="картинка вебсейты" width="300" height="146">
+          <h2>Веб-сайты</h2>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <button type="button" name="websites_order">Заказать</button></li>
+        <li>
+          <img src="illustration-2.png" alt="картинка приложения" width="300" height="146">
+          <h2>Приложения</h2>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <button type="button" name="applications_order">Заказать</button></li>
+        <li>
+          <img src="illustration-3.png" alt="картинка презентации" width="300" height="146">
         <h2>Презентации</h2>
         <p>Вы даже не подозреваете, 
           насколько вы изумительны!</p>
           <button type="button" name="presentations_order">Заказать</button>
+        </li>
+      </ul>
+      </section>
+      <section>
+        <!--подробное описание с преимуществами-->
+        <div>
+          <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p>Выполняем заказы на разработку:</p>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <!--короткое описание с преимуществами-->
+        <div>
+          <img src="nerds2.png" alt="logo2" width="300" height="146">
+          <p>с 2004 года Любим точность во всем:</p>
+          <ul>
+            <li>
+              <span>146<sup>%</sup></span>
+              <p>Уровень самоотдачи</p>
+            </li>
+            <li>
+              <span>100<sup>%</sup></span>
+              <p>Соблюдение сроков</p>
+            </li>
+            <li>
+              <span>50<sup>%</sup></span>
+              <p>Минимальная предоплата</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Ссылки на партнёров?-->
+      <section>
+        <ul>
+          <li><a href="#"><img src="htmlacademy2.png" alt="htmlacademy"></a></li>
+          <li><a href="#"><img src="Barbershop2.png" alt="Barbershop"></a></li>
+          <li><a href="#"><img src="pink2.png" alt="pink"></a></li>
+          <li><a href="#"><img src="mishka2.png" alt="mishka"></a></li>
+        </ul>
+      </section>
+      <section>
+        <!--карта будет background-image  в дальнейшем-->
+        <img src="map.png" alt="карта">
+        <div>
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <button type="button">Напишите нам</button>
+          <!--Всплывающее окно-->
+          <div>
+            <h3>Напишите нам</h3>
+            <!--кнопка для закрытия модального окна в виде крестика-->
+            <button type="button">крестик</button>
+            <form action="myfirstproject3333.me/Write_to_us" method="post">
+              <label for="name">Ваше имя:<input type="text" name="name" id="name"></label>
+              <label for="e-mail">Ваш e-mail:<input type="email" name="e-mail" id="e-mail"></label>
+              <label for="comment-field">Текст письма:<textarea name="comment" id="comment-field" cols="30" rows="10"></textarea></label>
+              <input type="submit" value="Отправить">
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 <footer>
+  <ul>
+    <li><a href="#">Вконтакте</a></li>
+    <li><a href="#">Фейсбук</a></li>
+    <li><a href="#">Инстаграм</a></li>
+  </ul>
   <div>
-    <ul>
-      <li><a href="#">Вконтакте</a></li>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Инстаграм</a></li>
-    </ul>
-  </div>
-  <p><span>Давайте дружить, это выгодно!</span><br>
-    Скидка 10% для друзей из социальных сетей.</p>
+    <h3>Давайте дружить, это выгодно!</h3>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </div>  
 </footer>
   </body>
 </html>
