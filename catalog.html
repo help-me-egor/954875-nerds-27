@@ -9,22 +9,21 @@
 </head>
 <body>
   <header>
-    <a href="#"><img src="/img/nerds-logo.svg" alt="лого компании" width="160" height="65"></a>
+    <a href="index.html"><img src="img/svg/nerds-logo.svg" alt="Логотип дизайн студии Nerds" width="160" height="65"></a>
     <nav>
     <ul>
       <li><a href="#">Студия</a></li>
       <li><a href="#">Клиенты</a></li>
       <li><a href="#">Магазин</a></li>
-      <!--Может убрать ссылку саму на себя?-->
       <li><a href="#">Контакты</a></li>
     </ul>
     </nav>  
-    <button type="button"> <img src="shoppingbasket.png" alt="Корзина"> Корзина</button>
+    <button type="button"> <img src="" alt="Корзина"> Корзина</button><!--картинка будет подключена через background-image-->
   </header>
   <main>
     <h2>Магазин готовых шаблонов</h2>
     <!-- Здесь будет форма -->
-    <form action="myfirstproject3333.me/courses" method="post">
+    <form action="" method="post">
       <div>
         <h3>Сетки:</h3>
         <label>
@@ -54,12 +53,7 @@
       <!--Список товаров-->
       <ul>
         <li>
-          <header>
-            <span></span><!--добавил спаны для того чтобы из сделать блочными и стилизовать в css-->
-            <span></span>
-            <span></span>
-            <img src="img/img-sedona.jpg" alt="sedona" width="360" height="576">
-          </header>
+          <img src="img/item-sedona.jpg" alt="Макет лендинга сайта sedona" width="360" height="576">
           <div>
             <h3><a href="#">Sedona</a></h3>
             <p>Информационный сайт для туристов</p>
@@ -67,12 +61,7 @@
           </div>
         </li>
         <li>
-          <header>
-            <span></span>
-            <span></span>
-            <span></span>
-            <img src="/img/img-pink.jpg" alt="pink" width="360" height="576">
-          </header>
+          <img src="img/item-pink.jpg" alt="Макет лендинга сайта pink" width="360" height="576">
           <div>
             <h3><a href="#">Pink App</a></h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -80,12 +69,7 @@
           </div>
         </li>
         <li>
-          <header>
-            <span></span>
-            <span></span>
-            <span></span>
-            <img src="/img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
-        </header>
+          <img src="img/item-barbershop.jpg" alt="Макет лендинга сайта Barbershop" width="360" height="576">
           <div>
             <h3><a href="#">Barbershop</a></h3>
             <p>Сайт салона красоты. Для мужчин, да.</p>
@@ -93,12 +77,7 @@
           </div>
         </li>
         <li>
-          <header>
-            <span></span>
-            <span></span>
-            <span></span>
-            <img src="/img/img-mishka.jpg" alt="mishka" width="360" height="576">
-          </header>
+          <img src="img/item-mishka.jpg" alt="Макет лендинга сайта mishka" width="360" height="576">
           <div>
             <h3><a href="#">Mishka</a></h3>
             <p>Интернет-магазин вязаных игрушек</p>
@@ -106,12 +85,7 @@
           </div>
         </li>
         <li>
-          <header>
-            <span></span>
-            <span></span>
-            <span></span>
-            <img src="/img/img-aplus.jpg" alt="A Plus" width="360" height="576">
-          </header>
+          <img src="img/item-aplus.jpg" alt="Макет лендинга сайта A Plus" width="360" height="576">
           <div>
             <h3><a href="#">A Plus</a></h3>
             <p>Лендинг курсов повышения квалификации</p>
@@ -119,12 +93,7 @@
           </div>
         </li>
         <li>
-          <header>
-            <span></span>
-            <span></span>
-            <span></span>
-            <img src="/img/img-kvast.jpg" alt="kvast" width="360" height="576">
-          </header>
+          <img src="img/item-kvast.jpg" alt="Макет лендинга сайта kvast" width="360" height="576">
           <div>
             <h3><a href="#">Кваст</a></h3>
             <p>Промо-сайт производителя крафтового кваса</p>
@@ -135,11 +104,11 @@
     </section>
     <section>
       <!--карта будет background-image  в дальнейшем-->
-      <img src="map.png" alt="карта">
+      <img src="" alt="карта">
       <address>
         <p>Nёrds design studio</p>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel"> тел. +7 (812) 275-75-75</a>
+        <a href="tel:+7-812-275-75-75"> тел. +7 (812) 275-75-75</a>
         <button type="button">Напишите нам</button>
       </address>
                 <!--Всплывающее окно-->
@@ -147,10 +116,10 @@
         <h3>Напишите нам</h3>
         <!--кнопка для закрытия модального окна в виде крестика-->
         <button type="button">крестик</button>
-        <form action="myfirstproject3333.me/Write_to_us" method="post">
-          <label>Ваше имя:<input type="text" name="name"></label>
-          <label>Ваш e-mail:<input type="email" name="e-mail"></label>
-          <label>Текст письма:<textarea name="comment"></textarea></label><!--убрал  cols="30" rows="10" для дальнейшей стилизации в css-->
+        <form action="" method="post">
+          <label>Ваше имя:<input type="text" name="name" placeholder="Имя Фамилия"></label>
+          <label>Ваш e-mail:<input type="email" name="e-mail" placeholder="email@example.com"></label>
+          <label>Текст письма:<textarea name="comment" placeholder="В свободной форме"></textarea></label><!--убрал  cols="30" rows="10" для дальнейшей стилизации в css-->
           <input type="submit" value="Отправить">
         </form>
       </div>
@@ -159,9 +128,9 @@
   </main>
   <footer>
     <ul>
-      <li><a href="#">Вконтакте</a></li>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Инстаграм</a></li>
+      <li><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+      <li><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+      <li><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
     </ul>
     <div>
       <h3>Давайте дружить, это выгодно!</h3>
