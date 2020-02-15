@@ -3,62 +3,65 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-<header>
-  <a href="#"><img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студии Nerds"></a>
-  <nav>
-  <ul>
+<header class="header">
+  <a href="#" class="header__logo"><img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студии Nerds"></a>
+  <nav class="nav">
+  <ul class="nav__site">
     <li><a href="#">Студия</a></li>
     <li><a href="#">Клиенты</a></li>
     <li><a href="catalog.html">Магазин</a></li>
     <li><a href="#">Контакты</a></li>
   </ul>
 </nav>  
-<button type="button"> <img src="#" alt="Корзина"> Корзина</button><!--будет подключена через background-image-->
+<button type="button" class="nav__button"> <img src="#" alt="Корзина">Корзина</button><!--будет подключена через background-image-->
 </header>
-    <main>
+    <main class="container">
       <h1 class="visually-hidden">Nerds design studio</h1>
       <!-- Здесь будет карусель под основной навигацией-->
-      <section>
+      <section class="advantage">
         <!--всесто img будет background-image, потому что они декоративные-->
-      <ul>
-        <li>
-          <img src="#" alt="картинка вебсейты" width="300" height="146">
+      <ul class="advantage__list">
+        <li class="advantage__item">
+          <div class="advantage__image--list1" width="300" height="146">
           <h2>Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <button type="button" name="websites_order">Заказать</button></li>
-        <li>
-          <img src="#" alt="картинка приложения" width="300" height="146">
+          <button type="button" name="websites_order" class="button">Заказать</button></li>
+        <li class="advantage__item">
+          <div class="advantage__image--list2" width="300" height="146">
           <h2>Приложения</h2>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <button type="button" name="applications_order">Заказать</button></li>
-        <li>
-          <img src="#" alt="картинка презентации" width="300" height="146">
+          <button type="button" name="applications_order" class="button">Заказать</button></li>
+        <li class="advantage__item">
+          <div class="advantage__image--list3" width="300" height="146">
         <h2>Презентации</h2>
         <p>Вы даже не подозреваете, 
           насколько вы изумительны!</p>
-          <button type="button" name="presentations_order">Заказать</button>
+          <button type="button" name="presentations_order" class="button">Заказать</button>
         </li>
       </ul>
       </section>
-      <section>
+      <section class="features">
         <!--подробное описание с преимуществами-->
-        <div>
+        <div class="features__about about-features">
           <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <h4>Выполняем заказы на разработку:</h4>
-          <ul>
+          <ul class="about-features__list">
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
         <!--короткое описание с преимуществами-->
-        <div>
+        <div class="features__tiny tiny-features">
           <img src="img/nerds-illustration.jpg" alt="Логотип дизайн студии Nerds" width="360" height="208">
           <h4>с 2004 года Любим точность во всем:</h4>
-          <ul>
+          <ul class="tiny-features__list">
             <li>
               <span>146<sup>%</sup></span>
               <span>Уровень самоотдачи</span>
@@ -75,23 +78,23 @@
         </div>
       </section>
       <!--картинки будут background-image-->
-        <ul>
+        <ul class="clients__list">
           <li><a href="#"><img src="#" alt="htmlacademy"></a></li>
           <li><a href="#"><img src="#" alt="Barbershop"></a></li>
           <li><a href="#"><img src="#" alt="pink"></a></li>
           <li><a href="#"><img src="#" alt="mishka"></a></li>
         </ul>
-      <section>
+      <section class="address">
         <!--карта будет background-image  в дальнейшем-->
         <img src="#" alt="карта">
         <address>
           <p>Nёrds design studio</p>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a href="tel:+7-812-275-75-75"> тел. +7 (812) 275-75-75</a>
-          <button type="button">Напишите нам</button>
+          <button class="btn" type="button">Напишите нам</button>
         </address>
                   <!--Всплывающее окно-->
-        <div>
+        <div class="modal">
           <h3>Напишите нам</h3>
           <!--кнопка для закрытия модального окна в виде крестика-->
           <button type="button">крестик</button>
@@ -104,13 +107,13 @@
         </div>
       </section>
     </main>
-<footer>
-  <ul>
-    <li><a href="#" title="Вконтакте"></a></li>
-    <li><a href="#" title="Фейсбук"></a></li>
-    <li><a href="#" title="Инстаграм"></a></li>
+<footer class="footer">
+  <ul class="socials">
+    <li class="socials__vkontakte"><a href="#" title="Вконтакте"></a></li>
+    <li class="socials__facebook"><a href="#" title="Фейсбук"></a></li>
+    <li class="socials__instagram"><a href="#" title="Инстаграм"></a></li>
   </ul>
-  <div>
+  <div class="footer__desc">
     <h3>Давайте дружить, это выгодно!</h3>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </div>  
