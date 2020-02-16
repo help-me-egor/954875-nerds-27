@@ -24,24 +24,22 @@
       <h1 class="visually-hidden">Nerds design studio</h1>
       <!-- Здесь будет карусель под основной навигацией-->
       <section class="advantage">
-        <!--всесто img будет background-image, потому что они декоративные-->
       <ul class="advantage__list">
         <li class="advantage__item">
-          <div class="advantage__image--list1" width="300" height="146">
+          <img src="img/illustration-sites.jpg" alt="Веб сайты" width="300" height="146">
           <h2>Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <button type="button" name="websites_order" class="button">Заказать</button></li>
+          <button type="button" name="websites_order" class="button button__websites">Заказать</button></li>
         <li class="advantage__item">
-          <div class="advantage__image--list2" width="300" height="146">
+          <img src="img/illustration-applications.jpg" alt="Приложения" width="300" height="146">
           <h2>Приложения</h2>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <button type="button" name="applications_order" class="button">Заказать</button></li>
+          <button type="button" name="applications_order" class="button button__applications">Заказать</button></li>
         <li class="advantage__item">
-          <div class="advantage__image--list3" width="300" height="146">
+        <img src="img/illustration-presentation.jpg" alt="Презентации" width="300" height="146">
         <h2>Презентации</h2>
-        <p>Вы даже не подозреваете, 
-          насколько вы изумительны!</p>
-          <button type="button" name="presentations_order" class="button">Заказать</button>
+        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <button type="button" name="presentations_order" class="button button__presentation">Заказать</button>
         </li>
       </ul>
       </section>
@@ -52,9 +50,9 @@
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <h4>Выполняем заказы на разработку:</h4>
           <ul class="about-features__list">
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для iOS и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
+            <li class="about-features__item">Веб-сайтов любой сложности</li>
+            <li class="about-features__item">Мобильных приложений для iOS и Android</li>
+            <li class="about-features__item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
         <!--короткое описание с преимуществами-->
@@ -63,35 +61,32 @@
           <h4>с 2004 года Любим точность во всем:</h4>
           <ul class="tiny-features__list">
             <li>
-              <span>146<sup>%</sup></span>
-              <span>Уровень самоотдачи</span>
+              <span class="tiny-features__percent">146<sup>%</sup></span>
+              <span class="tiny-features__subtext">Уровень самоотдачи</span>
             </li>
             <li>
-              <span>100<sup>%</sup></span>
-              <span>Соблюдение сроков</span>
+              <span class="tiny-features__percent">100<sup>%</sup></span>
+              <span class="tiny-features__subtext">Соблюдение сроков</span>
             </li>
             <li>
-              <span>50<sup>%</sup></span>
-              <span>Минимальная предоплата</span>
+              <span class="tiny-features__percent">50<sup>%</sup></span>
+              <span class="tiny-features__subtext">Минимальная предоплата</span>
             </li>
           </ul>
         </div>
       </section>
-      <!--картинки будут background-image-->
         <ul class="clients__list">
-          <li><a href="#"><img src="#" alt="htmlacademy"></a></li>
-          <li><a href="#"><img src="#" alt="Barbershop"></a></li>
-          <li><a href="#"><img src="#" alt="pink"></a></li>
-          <li><a href="#"><img src="#" alt="mishka"></a></li>
+          <li class="clients__item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/studio-small-logo-htmlacademy.png" alt="htmlacademy" width="199" height="68"></a></li>
+          <li class="clients__item"><a href="#"><img src="img/studio-small-logo-barbershop.png" alt="Barbershop" width="209" height="98"></a></li>
+          <li class="clients__item"><a href="#"><img src="img/studio-small-logo-pink.png" alt="pink" width="185" height="52"></a></li>
+          <li class="clients__item"><a href="#"><img src="img/studio-small-logo-mishka.png" alt="mishka" width="183" height="84"></a></li>
         </ul>
-      <section class="address">
-        <!--карта будет background-image  в дальнейшем-->
-        <img src="#" alt="карта">
-        <address>
-          <p>Nёrds design studio</p>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <section class="box">
+        <address class="address">
+          <p class="address__title">Nёrds design studio</p>
+          <p class="address__subtitle">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a href="tel:+7-812-275-75-75"> тел. +7 (812) 275-75-75</a>
-          <button class="btn" type="button">Напишите нам</button>
+          <button class="button address__button" type="button">Напишите нам</button>
         </address>
                   <!--Всплывающее окно-->
         <div class="modal">
@@ -108,10 +103,10 @@
       </section>
     </main>
 <footer class="footer">
-  <ul class="socials">
-    <li class="socials__vkontakte"><a href="#" title="Вконтакте"></a></li>
-    <li class="socials__facebook"><a href="#" title="Фейсбук"></a></li>
-    <li class="socials__instagram"><a href="#" title="Инстаграм"></a></li>
+  <ul class="social">
+    <li class="social__vkontakte"><a href="#" title="Вконтакте"></a></li>
+    <li class="social__facebook"><a href="#" title="Фейсбук"></a></li>
+    <li class="social__instagram"><a href="#" title="Инстаграм"></a></li>
   </ul>
   <div class="footer__desc">
     <h3>Давайте дружить, это выгодно!</h3>
