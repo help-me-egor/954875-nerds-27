@@ -8,7 +8,11 @@ body {
     font-weight: 400;
 
     background-color: #ffffff;
+    box-sizing: border-box;
 }
+    *, *::before, *::after {
+    box-sizing: inherit;
+    }
 
     a {
         text-decoration: none;
@@ -42,33 +46,54 @@ body {
         margin: -1px;
     }    
 
-    .nav__site,
+    .nav__list,
     .nav__button {
         text-transform: uppercase;
         list-style: none;
     }
 
-    .nav__site a,
+    .nav__list a,
     .nav__button {
         color: #000000;
     }
 
-    .nav__site a:hover,
+    .nav__list a:hover,
     .nav__button:hover {
         color: #fb565a;
     }
 
-    .nav__site a:active,
-    .nav__button:active {
+    .nav__list a:focus,
+    .nav__button:focus {
         color: #b1b1b1;
+    }
+
+    .advantage__list {
+        display: flex;
+    }
+
+    .advantage__item:first-child {
+        background-image: url(../img/illustration-sites.jpg);
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+    .advantage__item:nth-child(2) {
+        background-image: url(../img/illustration-applications.jpg);
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    .advantage__item:last-child {
+        background-image: url(../img/illustration-presentation.jpg);
+        background-repeat: no-repeat;
+        background-position: left;
     }
 
     .advantage__item{
         list-style: none;
-    }
-
-    .advantage__item{
         text-align: left;
+        width: 300px;
+        height: auto;
+        padding-top: 300px;
     }
 
     .advantage__item h2 {
@@ -85,54 +110,56 @@ body {
         color: #283136;
     }
 
-    .button__websites {
+    .advantage-button {
         width: 160px;
         height: 50px;
-        background-color: #fb565a;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 3px;
         cursor: pointer;
     }
 
-    .button__websites:hover {
+    .advantage-button--web {
+        background-color: #fb565a;
+    }
+
+    .advantage-button--web:hover {
         background-color: #e74246;
     }
 
-    .button__websites:active {
+    .advantage-button--web:focus {
         background-color: #d7373b;
-        box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-        color: rgba(255,255,255,0.3)
+        box-shadow: inset 0 3px 0 rgb(0, 1, 1);
     }
 
-    .button__applications {
-        width: 160px;
-        height: 50px;
+    .advantage-button--app {
         background-color: #00ca74;
-        cursor: pointer;
     }
-    .button__applications:hover {
+
+    .advantage-button--app:hover {
         background-color: #00bc6c;
     }    
 
-    .button__applications:active {
+    .advantage-button--app:focus {
         background-color: #00aa62;
         box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-        color:rgba(255, 255, 255, 0.3)
     }
 
-    .button__presentation {
+    .advantage-button--pre {
         width: 160px;
         height: 50px;
         background-color: #efc84a;
         cursor: pointer;
     }
 
-    .button__presentation:hover {
+    .advantage-button--pre:hover {
         background-color: #eab534;
     }    
 
-    .button__presentation:active {
+    .advantage-button--pre:focus {
         background-color: #e5a722;
         box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-        color:rgba(255, 255, 255, 0.3)
     }
 
     .about-features h3 {
@@ -202,7 +229,7 @@ body {
     .clients__item:hover img {
         opacity: 1;
     }
-    .clients__item:active img {
+    .clients__item:focus img {
         opacity: 0.1;
     }
     .address {
@@ -259,7 +286,7 @@ body {
         background-color: #e74246;
     }
 
-    .box {
+    .contacts {
         background-color: #b5b5b5;
         background-image: url(../img/map.jpg);
         background-size: cover;
@@ -275,8 +302,7 @@ body {
         list-style: none;
     }
 
-    .social__vkontakte {
-        background-image: url(../img/svg/vk-icon.svg);
+    .social-item {
         width: 79px;
         height: 79px;
         background-color: #e1e1e1;
@@ -284,28 +310,17 @@ body {
         background-position: center;
         border-radius: 50%;
         cursor: pointer;
+    }
 
+    .social__vkontakte {
+        background-image: url(../img/svg/vk-icon.svg);
     }
     .social__facebook {
         background-image: url(../img/svg/fb-icon.svg);
-        width: 79px;
-        height: 79px;
-        background-color: #e1e1e1;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 50%;
-        cursor: pointer;
     }
 
     .social__instagram {
         background-image: url(../img/svg/insta-icon.svg);
-        width: 79px;
-        height: 79px;
-        background-color: #e1e1e1;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 50%;
-        cursor: pointer;
     }
 
     .social__instagram:hover,
@@ -315,9 +330,9 @@ body {
 
     }
 
-    .social__instagram:active,
-    .social__facebook:active,
-    .social__vkontakte:active {
+    .social__instagram:focus,
+    .social__facebook:focus,
+    .social__vkontakte:focus {
         background-color: #d7373b;
         opacity: 0.3;
     }
@@ -340,16 +355,13 @@ body {
         text-align: left;
     }
 
-    .container-title {
-        background-color: #eeeeee;
-    }
-
-    .container-title h1 {
+    .catalog-main h1 {
         font-size: 55px;
         font-weight: 500;
         line-height: 55px;
         color: #000000;
         text-align: center;
+        background-color: #eeeeee;
     }
 
     .catalog-form h3 {
@@ -361,32 +373,26 @@ body {
 
     .catalog-list {
         list-style: none;
+        display: flex;
     }
     .catalog-list li {
         cursor: pointer;
     }
 
     .catalog-item {
-       background-image: url(../img/svg/catalog-header-browser.svg);
-       background-repeat: no-repeat;
-       background-position: top;
-       position: relative;
-       width: 360px;
-       height: 576px;
-       border: solid 1px rgba(0, 1, 1, 0.1);
-       margin-bottom: 26px;
+        position: relative;
     }
 
-    .catalog-item:hover {
-        background-image: url(../img/svg/catalog-header-browser-hover.svg);
-            
+    .catalog-item:hover svg path {
+        fill: #4d4d4d;
+
     }
     .catalog-item:hover .description {
         display: block;
     }
 
     .catalog-list img {
-        margin-top: 40px;
+        margin-top: -7px;
     }
 
     .catalog-list a {
@@ -414,11 +420,11 @@ body {
         padding: 24px 0 40px;
         text-align: center;
         position: absolute;
-        bottom: 0px;
+        bottom: 7px;
         display: none;
     }
     
-    .button__description {
+    .description-button {
         background-color: #fb565a;
         border: 1px solid #fb565a;
         border-radius: 3px;
@@ -428,11 +434,11 @@ body {
         cursor: pointer;
     }
 
-    .button__description:hover {
+    .description-button:hover {
         background-color: #e74246;
     }
 
-    .button__description:active {
+    .description-button:focus {
         background-color: #d7373b;
         box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
     }
