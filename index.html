@@ -9,6 +9,7 @@
   </head>
   <body>
 <header class="header">
+  <div class="header-wrapper">
   <a href="#" class="header__logo"><img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студии Nerds"></a>
   <nav class="nav">
   <ul class="nav__list">
@@ -17,26 +18,62 @@
     <li><a href="catalog.html">Магазин</a></li>
     <li><a href="#">Контакты</a></li>
   </ul>
-</nav>  
-<button type="button" class="nav__button"> <img src="#" alt="Корзина">Корзина</button><!--будет подключена через background-image-->
+</nav> 
+<button type="button" class="nav__button">Корзина</button>
+</div> 
 </header>
+<section class="slider">
+  <ul class="slider-list">
+    <li class="slider-item">
+      
+      <div class="wrapper-slider-item">
+      <h3>Долго, дорого, скрупулезно.</h3>
+      <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+      </div>
+      <button class="slider-button" type="button">узнать больше</button></li>
+    <li class="slider-item">
+      
+      <div class="wrapper-slider-item">
+      <h3>Любим математику как никто другой</h3>
+      <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+      </div>
+      <button class="slider-button" type="button">узнать больше</button></li>
+    </li>
+    <li class="slider-item">
+      
+      <div class="wrapper-slider-item">
+      <h3>Только ночь, только хардкор</h3>
+      <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+      </div>
+      <button class="slider-button" type="button">узнать больше</button></li>
+    </li>
+  </ul>
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+    <div class="slider-controls">
+      <label for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
+    </div>
+</section>
     <main class="container">
+    <div class="main-container--wrapper">
       <h1 class="visually-hidden">Nerds design studio</h1>
-      <!-- Здесь будет карусель под основной навигацией-->
       <section class="advantage">
       <ul class="advantage__list">
         <li class="advantage__item">
           <h2>Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <button type="button" name="websites_order" class="advantage-button advantage-button--web">Заказать</button></li>
+          <button type="button" name="websites_order" class="button advantage-button advantage-button--web">Заказать</button></li>
         <li class="advantage__item">
           <h2>Приложения</h2>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <button type="button" name="applications_order" class="advantage-button advantage-button--app">Заказать</button></li>
+          <button type="button" name="applications_order" class="button advantage-button advantage-button--app">Заказать</button></li>
         <li class="advantage__item">
         <h2>Презентации</h2>
         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <button type="button" name="presentations_order" class="advantage-button advantage-button--pre">Заказать</button>
+          <button type="button" name="presentations_order" class="button advantage-button advantage-button--pre">Заказать</button>
         </li>
       </ul>
       </section>
@@ -53,7 +90,7 @@
           </ul>
         </div>
         <!--короткое описание с преимуществами-->
-        <div class="features__tiny tiny-features">
+        <div class="tiny-features">
           <img src="img/nerds-illustration.jpg" alt="Логотип дизайн студии Nerds" width="360" height="208">
           <h4>с 2004 года Любим точность во всем:</h4>
           <ul class="tiny-features__list">
@@ -78,6 +115,7 @@
           <li class="clients__item"><a href="#"><img src="img/studio-small-logo-pink.png" alt="pink" width="185" height="52"></a></li>
           <li class="clients__item"><a href="#"><img src="img/studio-small-logo-mishka.png" alt="mishka" width="183" height="84"></a></li>
         </ul>
+    </div>
       <section class="contacts">
         <address class="address">
           <p class="address__title">Nёrds design studio</p>
@@ -87,19 +125,31 @@
         </address>
                   <!--Всплывающее окно-->
         <div class="modal">
+          <div class="wrapper-modal">
           <h3>Напишите нам</h3>
-          <!--кнопка для закрытия модального окна в виде крестика-->
-          <button type="button">крестик</button>
-          <form action="#" method="post">
-            <label>Ваше имя:<input type="text" name="name" placeholder="Имя Фамилия"></label>
-            <label>Ваш e-mail:<input type="email" name="e-mail" placeholder="email@example.com"></label>
-            <label>Текст письма:<textarea name="comment" placeholder="В свободной форме"></textarea></label><!--убрал  cols="30" rows="10" для дальнейшей стилизации в css-->
-            <input type="submit" value="Отправить">
+          <button type="button" class="modal-button" title="закрыть">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	              width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+                    <path fill="#FB565A" d="M13.328,10.5l7.371-7.371c0.389-0.389,0.389-1.025,0-1.414l-1.414-1.415c-0.389-0.389-1.025-0.389-1.414,0
+	                  L10.5,7.672L3.129,0.301c-0.389-0.389-1.025-0.389-1.414,0L0.301,1.715c-0.389,0.389-0.389,1.025,0,1.414L7.672,10.5l-7.371,7.371
+	                  c-0.389,0.389-0.389,1.025,0,1.414l1.415,1.414c0.389,0.389,1.025,0.389,1.414,0l7.371-7.371l7.371,7.371
+	                  c0.389,0.389,1.025,0.389,1.414,0l1.414-1.414c0.389-0.389,0.389-1.025,0-1.414L13.328,10.5z"/>
+            </svg>
+          </button>
+          <form action="#" method="post" class="modal-form">
+            <div class="wrapper-input">
+            <p class="modal-form--item"><label>Ваше имя:<input type="text" name="name" placeholder="Имя Фамилия"></label></p>
+            <p class="modal-form--item"><label>Ваш e-mail:<input type="email" name="e-mail" placeholder="email@example.com"></label></p>
+            </div>  
+            <p class="modal__textarea"><label>Текст письма:<textarea name="comment" placeholder="В свободной форме"></textarea></label></p>
+            <input type="submit" value="Отправить" class="modal-input">
           </form>
+          </div>  
         </div>
       </section>
     </main>
 <footer class="footer">
+  <div class="footer-wrapper">
   <ul class="social">
     <li class="social-item social__vkontakte"><a href="#" title="Вконтакте"></a></li>
     <li class="social-item social__facebook"><a href="#" title="Фейсбук"></a></li>
@@ -108,7 +158,43 @@
   <div class="footer__desc">
     <h3>Давайте дружить, это выгодно!</h3>
     <p>Скидка 10% для друзей из социальных сетей.</p>
-  </div>  
+  </div>
+  </div> 
 </footer>
   </body>
+  <header class="main-header">
+    <div class="slider">
+      <input type="radio" id="btn-1" name="toggle" checked>
+      <input type="radio" id="btn-2" name="toggle">
+      <input type="radio" id="btn-3" name="toggle">
+      <div class="slider-controls">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
+      </div>
+      <div class="slides">
+        <div class="slide">
+          <div class="slide-text">
+             <div class="slide-title">Долго, дорого,<br>скрупулезно</div>
+             <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+             <a class="btn" href="#">Узнать больше</a>
+          </div>
+         </div>
+        <div class="slide">
+          <div class="slide-text">
+            <div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+            <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-text">
+            <div class="slide-title">Только наркотики,<br> только хардкор!</div>
+            <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 </html>
