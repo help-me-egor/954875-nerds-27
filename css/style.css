@@ -148,8 +148,9 @@ body {
     .slider-item {
         margin: 0 auto;
         width: 1160px;
+        min-height: 413px;
         border: 1px solid black;
-        /* display: none; */
+        display: none;
     }
 
     .slider-item h3 {
@@ -219,26 +220,21 @@ body {
 
 
     #btn-1:checked ~ .slider-list .slider-item:nth-child(1) {
-        display:none;
+        display:block;
     }
 
     #btn-2:checked ~ .slider-list .slider-item:nth-child(2) {
-        display:none;
+        display:block;
     }
 
     #rbtn-3:checked ~ .slider-list .slider-item:nth-child(3) {
-        display:none;
+        display:block;
     }
-
-
- */
-
-
 
 
 
     .main-container--wrapper {
-        width: 1159px;
+        width: 1160px;
         margin: 0 auto;
     }
     .advantage__list {
@@ -1204,103 +1200,4 @@ body {
       .pagination-list .pagination-active {
         background: transparent;
       }
-      
-      .main-header {
-        padding-top: 50px;
-        background: #eeeeee;
-      }
-      .slider {
-        position: relative;
-        width: 880px;
-        margin: 0 auto;
-      }
-      .slide {
-        width: 100%;
-        min-height: 310px;
-        background-repeat: no-repeat;
-        background-position: 100% 10px;
-        transition: left 0.3s ease;
-      }
-      .slider input[type="radio"] {
-        display: none;
-      }
-      .slider-controls {
-        position: absolute;
-        bottom: 95px;
-        left: 50%;
-        z-index: 10;
-        width: 200px;
-        margin-left: -100px;
-        text-align: center; 
-      }
-      .slider-controls label {
-        display: inline-block;
-        width: 7px;
-        height: 7px;
-        margin: 0 3px;
-      
-        vertical-align: top;
-      
-        background: #ffffff;
-        border: 5px solid white;
-        border-radius: 50%;
-        cursor: pointer;
-      }
-      .slide-text {
-        width: 500px;
-        padding: 30px 0;
-      }
-      .slide-title {
-        font-weight: 500;
-        font-size: 36px;
-      }
-      .slide p {
-        font-weight: 500;
-        line-height: 22px;
-        color: #283136;
-      }
-      .slide .btn {
-        display: block;
-        width: 220px;
-        margin-top: 25px;
-        padding: 12px 10px;
-        font-weight: 300;
-        font-size: 12px;
-        text-align: center;
-        color: #ffffff;
-        text-transform: uppercase;
-        text-decoration: none;
-      
-        background: #fb565a;
-        border-radius: 3px;
-      }
-      .slide:nth-child(1) {
-        background-image: url("https://up.htmlacademy.ru/assets/nerds/img/slider-bg.png");
-      }
-      
-      .slide:nth-child(2) {
-        background-image: url("https://up.htmlacademy.ru/assets/nerds/img/slider-bg-2.png");
-      }
-      
-      .slide:nth-child(3) {
-        background-image: url("https://up.htmlacademy.ru/assets/nerds/img/slider-bg-3.png");
-      }
-      .slide {
-        display: none;
-      }
-      #btn-1:checked ~ .slides .slide:nth-child(1) {
-        display: block;
-      }
-      
-      #btn-2:checked ~ .slides .slide:nth-child(2) {
-        display: block;
-      }
-      
-      #btn-3:checked ~ .slides .slide:nth-child(3) {
-        display: block;
-      }
-      #btn-1:checked ~ .slider-controls label[for="btn-1"],
-      #btn-2:checked ~ .slider-controls label[for="btn-2"],
-      #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-        background: #c1c1c1;
-      }
+   
